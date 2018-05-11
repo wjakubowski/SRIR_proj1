@@ -1,0 +1,5 @@
+iteracje=100
+rozmiarSiatki=20
+maxGlebokoscRekursji=1000
+
+

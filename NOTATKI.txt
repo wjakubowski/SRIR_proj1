@@ -1,0 +1,9 @@
+TEMAT:
+2. Monte Carlo - rozk³ad temperatury w 2-D. (Quinn, zad. 10.9)
+OPIS:
+10.9 Implement a parallel program solving the steady-state temperature
+problem described in Section 10.5.2. Assume the square plate has been
+discretized into a 20 x 20 grid of smaller squares. Assume the
+temperature on three sides of the plate is 0" and the temperature on the
+fourth side is 100'. Compute the temperature at the middle of the plate
+to three digits of precision.
