@@ -7,3 +7,24 @@ discretized into a 20 x 20 grid of smaller squares. Assume the
 temperature on three sides of the plate is 0" and the temperature on the
 fourth side is 100'. Compute the temperature at the middle of the plate
 to three digits of precision.
+
+PLAN ZROWNLEGLANIA:
+-pamiêæ nie wspó³dzielona
+-master - worker
+-dzia³anie w turach
+-worker:
+	-kopiuje dane siatki od mastera
+	-wykonuje obliczenia
+	-przesy³a wyniki do mastera
+-master:
+	-przesy³a dane z siatki workerom
+	-oczekuje na powrot wyników od workerow
+	-usrednia otrzymane dane
+	-sprawdza warunek samouzgodnienia (zbieznosci) dla srodkowego punktu 
+	(w tresci zadania jest ze dokladnosc do 3 miejsca o przecinku)
+	
+Tury:
+	-tworzenie workerow z kopiami siatki
+	-oczekiwanie na wykonanie obliczenia
+	-usrednieie wynikow
+	-sprawdzenie zbieznosci wynikow (samouzgodnienie)
